@@ -20,7 +20,7 @@
 #define WREN_PIN  PORTD2	// pin 2
 
 void asynch9_init() {
-  // put your code here, to setup asynchronous serial communication using 9 bits:
+  // put your code here, to setup asynchronous serial communication using 9 bits
     uint8_t ubrr = MYUBRR;
 	UBRR0H = (uint8_t) (ubrr >> 8);
 	UBRR0L = (uint8_t) (ubrr);
